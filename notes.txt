@@ -76,6 +76,12 @@ Let's learn git and GitHub
 
 ----------------------------------------------------------------------------------------------------------------------
 
-12.
+12. git push -> once we have already done a puch the remote repo hast tha data now again if i update the local code
+    i only need to do , git add , git commit and git push .
 
-    
+13. git remote -v  -> this will tell if local repo is connected to remote repo , and will also give the link of
+    remote repo
+
+14. git pull -> Jo Bhi Latest Changes He Remote Repo Me Vo Mere Local Me Le K Aao.
+
+15. git clone link -> first time ia want a project in my local i go with git clone
