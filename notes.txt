@@ -90,3 +90,5 @@ Let's learn git and GitHub
     1. git branch -> Tells the current branch
     2. git branch branchName -> Creates the new branch
     3. git checkout branchName -> Selects the given branch
+    4. git merge branchName -> here from main branch we are merging the given branch
+
