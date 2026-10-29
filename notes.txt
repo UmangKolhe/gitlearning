@@ -86,4 +86,7 @@ Let's learn git and GitHub
 
 15. git clone link -> first time ia want a project in my local i go with git clone.
 
-16.
+16. Branching and mearging
+    1. git branch -> Tells the current branch
+    2. git branch branchName -> Creates the new branch
+    3. git checkout branchName -> Selects the given branch
