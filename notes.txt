@@ -19,41 +19,63 @@ Let's learn git and GitHub
    -> Now inside the folder which is now having version control mechanism I create a html file and I want to tell the git that this is the version 1 of the file .
    -> So for this we need to do git commit 
    -> before that we need to know about git status 
-   -> now we did git add *
+   -> now we did git add .
    -> now we do git commit -m "this is version one"
-   -> now the default branch is master branch 
-   -> we will understand here the meaning of commit a git commit is a command in git that captures a snapshot of the project current version and creates a permanent record in the history 
-   
-6. Flow of git eco system 
+   -> now the default branch is master branch
+   -> we will understand here the meaning of commit a git commit is a command in git that captures a snapshot of the project current version and creates a permanent record in the history
+
+6. Flow of git eco system
 
    -> working directory is the folder which I did git init
-   -> now when I did git add the folder goes in to the staging area 
+   -> now when I did git add the folder goes in to the staging area
    -> now after doing git commit the folder goes in to git local repo here version is given to the content every time it is committed
-   -> the importance of staging area is that we can do a roll back here if i want to select  only the files which i want should be committed 
+   -> the importance of staging area is that we can do a roll back here if i want to select  only the files which i want should be committed
 
-7. Now I did some modification to the file inside the folder which is already under version control 
-   Now if I do git status I will get to know the changes 
-   Now if I do git diff I can literally see the changes made to version one 
-   Now I can again do a add and commit 
+7. Now I did some modification to the file inside the folder which is already under version control
+   Now if I do git status I will get to know the changes
+   Now if I do git diff I can literally see the changes made to version one
+   Now I can again do a add and commit
 
-8. Now suppose if I want to see what was the code in version one we use git log now git logs will give us id for all the commits done till now 
-   git show id:path of the file 
+8. Now suppose if I want to see what was the code in version one we use git log now git log will give us id for all the commits done till now
+   git show id:path of the file
 
-9. Now I want in my ide development area the code of previous version I can do a simple 
-   git checkout id -- *  the en want to come back to the original or the latest version I do git checkout master -- *
+9. Now I want in my ide development area the code of previous version I can do a simple
+   git checkout id -- *  if we want to come back to the original or the latest version I do git checkout master -- *
 
-10. Working with git restore 
-    If we do some mistake and save it 
+10. Working with git restore
+    If we do some mistake and save it
     now i want my previous working version
-    for this we can do 
+    for this we can do
     git restore filename (if i want to restore only one file)
     git restore . (if i want to restore all files )
     (we have only saved the rong data in file we have not done add or commit)
-    suppose i pushed rong data to stage area 
+    suppose i pushed rong data to stage area
     i can do git diff --cached
-    now if i do git restore --staged filename or . 
-    if i commit rong data  tire code base of the give version will come to dev are and we can see it 
+    now if i do git restore --staged filename or .
+    if i commit rong data  the code base of the give version will come to dev area and we can see it
    Now if I
     to revert commited data git reset --soft head^   , git reset --hard head^
+
+11. working with remot repo
+    A remot repo refers to a version of your project that resides on a network server or a hosted repo on the internet .
+    for remot repo we use git hub
+
+
+----------------------------------------------------------------------------------------------------------------------
+1.  git add . or git add filename
+2.  git commit -m "message"
+3.  git status
+4.  git log
+5.  git show id:path
+6.  git checkout id -- *
+7.  git checkout master -- *
+8.  git restore . or git restore filename
+9.  git restore --staged filename or .
+10. git reset --hard head^
+11. we did a push from local to remote
+
+----------------------------------------------------------------------------------------------------------------------
+
+12.
 
     
